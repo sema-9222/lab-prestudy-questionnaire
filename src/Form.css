@@ -1,0 +1,259 @@
+.Form {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: hidden;
+}
+
+h4 {
+  margin: 0px;
+}
+
+.likertScale {
+  margin: 0px;
+  padding: 0%;
+  margin-bottom: 1em;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.likertBand {
+  flex-grow: 4;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: flex;
+  padding-top: 1em;
+  width: 80%;
+}
+
+.likertIndicator {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  border: thin solid #202e35;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  box-sizing: border-box;
+  transition: all linear 200ms;
+}
+
+.likertLine {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  margin-top: 0.5em;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+.likertResponse > input:checked + .likertIndicator {
+  background-color: #559894;
+}
+
+.scale {
+  display: flex;
+  align-items: center;
+  font-size: 85%;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 85%;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.cont1-1 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 2%;
+
+  overflow-x: hidden;
+  align-items: center;
+}
+.radio {
+  font-size: 90%;
+  align-items: center;
+  text-align: justify;
+  padding-left: 50px;
+}
+
+.dual .likertBand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.dual.likertBand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.dual .likertLine {
+  display: none;
+}
+
+.dual .likertResponse {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.dual .likertText {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row-reverse;
+  padding-left: 20px;
+  justify-content: flex-end;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.dual .likertIndicator {
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  border: thin solid #202e35;
+  background-color: #ffffff;
+  left: 0%;
+  transform: translateX(-50%);
+  top: 0;
+  box-sizing: border-box;
+  transition: all linear 200ms;
+}
+
+.trial .likertBand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.trial .likertLine {
+  display: none;
+}
+
+.trial .likertResponse {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.trial .likertText {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row-reverse;
+  padding-left: 20px;
+  justify-content: flex-end;
+  padding-top: 0px;
+  text-align: start;
+  font-weight: normal;
+}
+
+.trial .likertIndicator {
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  border: thin solid #202e35;
+  background-color: #ffffff;
+  left: 0%;
+  transform: translateX(-50%);
+  top: 0;
+  box-sizing: border-box;
+  transition: all linear 200ms;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-width: 5px;
+  width: 60%;
+  background: #e0e4efc7;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1%;
+}
+
+.questiondark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+  padding: 0px;
+  background: #c0c4d3;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.082);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 70%;
+  padding: 1%;
+  height: 26vh;
+}
+
+button {
+  background-color: #9a9fb2;
+  border: 2px solid #a9aebe;
+  font-size: medium;
+  width: 8%;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.btnq:hover {
+  cursor: pointer;
+}
+.btn2 {
+  background-color: #3c435c;
+  color: white;
+}
+
+.btnq {
+  font-size: 90%;
+  height: 8vh;
+  border-radius: 6px;
+  border-color: #3c435c;
+  width: 10%;
+}
